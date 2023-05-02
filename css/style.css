@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+	height: 100vh;
+	width: 100vw;
+	background: url('../images/hinh-nen-may-tinh.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.bird {
+	height: 100px;
+	width: 130px;
+	position: fixed;
+	top: 40vh;
+	left: 30vw;
+	z-index: 100;
+}
+
+.tube {
+	position: fixed;
+	top: 40vh;
+	left: 100vw;
+	height: 70vh;
+	width: 6vw;
+	background: linear-gradient(90deg, #bc1f57, #151748);
+	border: 5px solid black;
+}
+
+.teach {
+	position: absolute;
+	z-index: 10;
+	color: black;
+	top: 50%;
+	left: 50%;
+	font-size: 4em;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+img#bird {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.score {
+	position: fixed;
+	z-index: 10;
+	height: 10vh;
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+	text-shadow: 1px 1px 10px rgba(236, 231, 231, 0.774);
+	-webkit-text-stroke-color: black;
+	top: 0;
+	left: 0;
+	padding: 10px 10px;
+	background: black;
+	margin: 10px;
+	min-width: fit-content;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.score_val {
+	color: pink;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 1080px) {
+
+
+	.score {
+		font-size: 8vh;
+	}
+
+	.bird {
+		width: 120px;
+		height: 90px;
+	}
+
+	.pipe_sprite {
+		width: 14vw;
+	}
+}
+
+@media screen and (max-width:700px) {
+	.score {
+		position: fixed;
+		z-index: 10;
+		height: 10vh;
+		font-size: 1em;
+		font-weight: bold;
+		color: white;
+		text-shadow: 1px 1px 10px rgba(236, 231, 231, 0.774);
+		-webkit-text-stroke-color: black;
+		top: 0;
+		left: 0;
+		padding: 10px 10px;
+		background: black;
+		margin: 10px;
+		min-width: fit-content;
+		display: flex;
+		align-items: center;
+		border-radius: 10px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.tube {
+		position: fixed;
+		top: 40vh;
+		left: 100vw;
+		height: 70vh;
+		width: 25vw;
+		background: linear-gradient(90deg, #bc1f57, #151748);
+		border: 5px solid black;
+	}
+	img#bird{
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+	}
+}
