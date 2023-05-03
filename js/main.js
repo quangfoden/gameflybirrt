@@ -1,7 +1,7 @@
 let move_speed = 3, grativy = 0.5;
 let bird = document.querySelector('.bird');
 let img = document.getElementById('bird');
-let sound_playing = new Audio('sounds effect/hay.mp3');
+let sound_playing = new Audio('sounds effect/point.mp3');
 let sound_die = new Audio('sounds effect/gvt.mp3');
 
 // lấy thuộc tính phần tử bird
@@ -19,7 +19,6 @@ img.style.display = 'none';
 teach.classList.add('teachStyle');
 
 document.addEventListener('click', (e) => {
-
     if (game_state != 'Play') {
         document.querySelectorAll('.tube').forEach((e) => {
             e.remove();
